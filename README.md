@@ -45,7 +45,7 @@ available filesystem drive (expected to be the Ducky's mass-storage partition).
 | Flipper Zero BadUSB | Not compatible — DuckyScript 1.0 only |
 
 ## Author
-<your_handle>
+D-L3aN
 
 ## Version
 2.0
